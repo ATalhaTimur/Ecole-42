@@ -6,35 +6,19 @@
 /*   By: abtimur <abtimur@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/12 18:13:24 by abtimur           #+#    #+#             */
-/*   Updated: 2024/02/12 18:38:03 by abtimur          ###   ########.fr       */
+/*   Updated: 2024/02/13 04:09:38 by abtimur          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 int	ft_sqrt(int nb)
 {
-	int	result;
 	int	i;
 
-	result = 0;
-	i = 2;
-	if (nb <= 0)
-	{
-		result = 0;
-	}
-	if (nb == 1)
-	{
-		result = 1;
-	}
-	if (nb >= 2)
-	{
-		while ((i * i) <= nb)
-		{
-			if (i * i == nb)
-			{
-				result = i;
-			}
-			i++;
-		}
-	}
-	return (result);
+	i = 1;
+	while (i * i <= nb && i < 46341)
+		i++;
+	i--;
+	if (i * i == nb)
+		return (i);
+	return (0);
 }

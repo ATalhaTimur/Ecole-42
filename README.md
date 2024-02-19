@@ -1,2 +1,3 @@
 # Ecole-42
-ecole 42  C projects
+Ecole 42 piscine 
+C projects
